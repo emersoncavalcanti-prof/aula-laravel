@@ -24,7 +24,7 @@
 </nav>
 
  <div class="container mt-5">
-    <div class="text-center">
+    <div class="text-center mb-5">
         <img src="{{ asset('images/logo.jpg') }}" alt="Logo" class="img-fluid mb-2" style="max-width: 200px;">
     </div>
 
