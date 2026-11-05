@@ -13,7 +13,7 @@
 
         <div class="row">
 
-            <div class="col-8">
+            <div class="col-7">
                 <h1>Cardápio Digital</h1>
 
                 <p>
@@ -21,19 +21,9 @@
                 </p>
 
             </div>
-            <div class="col-4">
-                <div class="row">
-  <div class="sm:col-6 mb-3 sm:mb-0">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn-solid theme-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
 
-</div>
+            <div class="col-5">
+                @yield('conteudo')
             </div>
 
         </div>

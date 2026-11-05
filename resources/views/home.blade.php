@@ -3,5 +3,5 @@
 @section('title', 'Home')
 
 @section('conteudo')
-@livewire('home')
+@livewire('login-component')
 @endsection
