@@ -7,21 +7,42 @@
                         <div class="card-body">
                             <h4 class="card-title">Preencha o formulário</h4>
                             <p class="card-text">Voltar para o <a href="./">login</a>.</p>
-                            <form>
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="password" class="form-label">Senha</label>
-                                    <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
-                                </div>
-                                <button type="submit" class="btn btn-success btn-lg">Cadastrar</button>
+                            <form wire:submit="cadastrar" class="space-y-5">
 
+                                <p>
+                                    <label>Nome da Empresa</label>
+                                    <input type="text" wire:model="nome_empresa" class="form-control">
+                                    @error('nome_empresa') <span class="text-danger">{{ $message }}</span> @enderror
+                                </p>
+
+                                <p>
+                                    <label>Whatsapp</label>
+                                    <input type="text" wire:model="whatsapp" class="form-control">
+                                    @error('whatsapp') <span class="text-danger">{{ $message }}</span> @enderror
+                                </p>
+
+                                <p>
+                                    <label>Seu nome</label>
+                                    <input type="text" wire:model="nome" class="form-control">
+                                    @error('nome') <span class="text-danger">{{ $message }}</span> @enderror
+                                </p>
+
+                                <p>
+                                    <label>Email</label>
+                                    <input type="email" wire:model="email" class="form-control">
+                                    @error('email') <span class="text-danger">{{ $message }}</span> @enderror
+                                </p>
+                                <p>
+                                    <label>Senha</label>
+                                    <input type="password" wire:model="senha" class="form-control">
+                                    @error('senha') <span class="text-danger">{{ $message }}</span> @enderror
+                                </p>
+                                
+                                <p>
+                                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                </p>
+
+                            </form>
                         </div>
                         </div>
                     </div>
