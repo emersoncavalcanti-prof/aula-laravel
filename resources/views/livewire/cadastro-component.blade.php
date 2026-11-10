@@ -11,8 +11,8 @@
 
                                 <p>
                                     <label>Nome da Empresa</label>
-                                    <input type="text" wire:model="nome_empresa" class="form-control">
-                                    @error('nome_empresa') <span class="text-danger">{{ $message }}</span> @enderror
+                                    <input type="text" wire:model="razao_social" class="form-control">
+                                    @error('razao_social') <span class="text-danger">{{ $message }}</span> @enderror
                                 </p>
 
                                 <p>
